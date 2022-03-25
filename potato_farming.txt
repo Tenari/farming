@@ -1,0 +1,46 @@
+http://www.producepriceindex.com/
+http://cias.wisc.edu/organic-potatoes-they-can-be-grown-but-can-they-be-profitable/
+http://vegvariety.cce.cornell.edu/main/login.php
+https://www.buildingsguide.com/blog/planning-steel-warehouse-building
+http://bastropproducersmkt.com/
+
+Idea: grow potatoes indoors.
+Reasons for inside: 
+  - easier pest control (no pesticides)
+  - can grow year-round
+  - cheaper land cost--doesnt need to be good farmland, and stacking vertically means less land to buy
+Reasons for potatoes:
+  - fast growing time (4 crops per year)
+  - small volume per plant
+
+Key variables:
+  - How long does a potato take to mature? Potato varieties are often classified according to the number of days they require to come to harvest: “early” season (75-90 days), “midseason” (90-135 days), and “late-season” (135-160 days).
+  - How many lbs of potato does one "slot" produce? Each plant will produce about 5 to 10 potatoes. = 4 lbs - 8 lbs
+  - How much $ / lbs of potato can you get in revenue? $10 / 50lbs = $0.20 / lbs (https://www.ams.usda.gov/mnreports/fvdidnop.pdf)
+  - How much light do potatoes need to grow?
+  - How much water do potatoes need to grow? Potatoes need about 1 - 2 inches of water per week.
+  - How much does wharehouse space cost? to build? to rent? to buy?
+  - How much does dirt cost?
+  - How long does dirt last?
+  - How many new slots can one slot worth of produce plant for next round?
+  - What temperature range does the building need to be kept at? Tuber formation halts when soil temperatures reach 27 °C (81 °F); are sensitive to heavy frosts. The ideal potato growing temperature is 45° to 80°F
+  - What factors affect produce size? optimal soil moisture and temperature, soil nutrient availability and balance, and resistance to pest attacks.
+  - How big does a slot need to be? 2ft x 2ft x 2ft with a 2.5ft clearance above (http://veggieharvest.com/vegetables/potato.html)
+
+
+Revenue from 1 slot per harvest = 4 * 0.2 = $0.8 to $1.6
+Revenue from 1 slot per year = 0.8 * 3.3 = $2.64 to $5.28
+
+TODO:
+[x] buy potatoes
+[ ] let eyes sprout
+[ ] buy burlap sacks
+[ ] buy scale for weighing potatoes as they grow
+[ ] buy LED lamp setup
+[ ] plant
+[ ] monitor as they grow
+
+
+
+Onions:
+

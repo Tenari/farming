@@ -1,0 +1,90 @@
+# all units are imperial
+---
+rye:
+  dtm: 
+    max: 150
+    min: 120
+  nursery: direct sow
+  frost_tolerance: -20
+  sun: full
+  soil: any
+  harvest:
+    early_date: Jan 1
+    late_date: Mar 31
+    notes: |
+      wait for stalks begin to turn brown.
+      Cut at ground level, bundle, and allow to dry for a few weeks.
+      Thresh by beating stalks.
+      winnow out the garbage with a fan and keep the grains to grind for flour
+  planting:
+    early_date: Sept 10
+    late_date: Oct 15
+    depth: 1
+    spacing:
+      in_row: 3
+      between_row: 3
+  data:
+  - https://www.hort.purdue.edu/newcrop/afcm/rye.html
+  - https://www.growveg.com/plants/us-and-canada/how-to-grow-cereal-rye/
+  - https://www.sare.org/publications/managing-cover-crops-profitably/nonlegume-cover-crops/cereal-rye/
+  - https://eos.com/products/crop-monitoring/crops/rye/
+onion:
+  varieties:
+  - 1015Y Texas SuperSweet
+  - Grano 502
+  - Red Burgundy
+  nursery: transplant
+  frost_tolerance: -20
+  sun: full
+  soil: any
+  planting:
+    early_date: Sept 10
+    late_date: Oct 15
+    depth: 1
+    spacing:
+      in_row: 3
+      between_row: 3
+  dtm: 
+    max: 150
+    min: 120
+  harvest:
+    early_date: Jan 1
+    late_date: Mar 31
+    notes: |
+      wait for stalks begin to turn brown.
+      Cut at ground level, bundle, and allow to dry for a few weeks.
+      Thresh by beating stalks.
+      winnow out the garbage with a fan and keep the grains to grind for flour
+  data:
+  - https://aggie-horticulture.tamu.edu/archives/parsons/publications/onions/ONIONGRO.html
+potato:
+jalapeno:
+broccoli:
+tomato:
+tobacco:
+cabbage:
+carrot:
+cauliflower:
+cucumber:
+eggplant:
+garlic:
+kale:
+lettuce:
+okra:
+bell_pepper:
+pumpkin:
+radish:
+spinach:
+squash:
+basil:
+chamomile:
+oregano:
+mint:
+rosemary:
+cilantro:
+sage:
+lavender:
+tea:
+blueberries:
+microsunflower:
+micro
