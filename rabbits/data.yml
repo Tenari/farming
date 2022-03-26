@@ -11,30 +11,36 @@
 - :id: 2
   :gender: female
   :birth: 2022-07-30
-  :location: cage-2
+  :location: cage-3
   :father: 0
   :mother: 1
 - :id: 3
-  :gender: unk
+  :gender: female
   :birth: 2022-07-30
-  :location: cage-2
+  :location: cage-4
   :father: 0
   :mother: 1
 - :id: 4
   :gender: unk
-  :birth: 2022-07-30
-  :location: cage-2
+  :birth: 2022-09-30
+  :location: tractor-1
   :father: 0
-  :mother: 1
+  :mother: 2
 - :id: 5
-  :gender: unk
-  :birth: 2022-07-30
-  :location: cage-2
+  :gender: male
+  :birth: 2022-09-30
+  :location: tractor-1
   :father: 0
-  :mother: 1
+  :mother: 3
 - :id: 6
-  :gender: unk
-  :birth: 2022-07-30
-  :location: cage-2
+  :gender: female
+  :birth: 2022-09-30
+  :location: cage-5
   :father: 0
   :mother: 1
+- :id: 7
+  :gender: unk
+  :birth: 2022-11-30
+  :location: cage-5
+  :father: 5
+  :mother: 6
