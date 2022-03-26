@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 #
-
-#File.write(FILENAME, YAML.dump(data))
 require 'yaml'
 require 'date'
 
@@ -22,28 +20,36 @@ def litters(rabbit, data)
   litters
 end
 
-if ARGV[0] == 'add'
-  if ARGV.count >= 4
-    rabbit = {
-      id: data[:rabbits].count,
-      gender: ARGV[1],
-      birth: Date.parse(ARGV[2]),
-      location: ARGV[3],
-    }
-    if ARGV[4]
-      rabbit[:father] = ARGV[4].to_i
-    end
-    if ARGV[5]
-      rabbit[:mother] = ARGV[5].to_i
-    end
-    data[:rabbits].push(rabbit)
-    File.write(FILENAME, YAML.dump(data))
-    puts rabbit
+def check_error(cond, count, msg)
+  if ARGV.count.send(cond, count)
   else
-    puts "error incorrect command arguments count"
-    puts "usage:\n  ./rabbit.rb add male 2022-05-30 cage-1"
+    puts msg
+    puts "\n"
+    raise ArgumentError
   end
+end
+
+if ARGV[0] == 'add'
+  check_error(:>=, 4, "error incorrect command arguments count\nusage:\n  ./rabbit.rb add male 2022-05-30 cage-1")
+
+  rabbit = {
+    id: data[:rabbits].count,
+    gender: ARGV[1],
+    birth: Date.parse(ARGV[2]),
+    location: ARGV[3],
+  }
+  if ARGV[4]
+    rabbit[:father] = ARGV[4].to_i
+  end
+  if ARGV[5]
+    rabbit[:mother] = ARGV[5].to_i
+  end
+  data[:rabbits].push(rabbit)
+  File.write(FILENAME, YAML.dump(data))
+  puts rabbit
 elsif ARGV[0] == 'show'
+  check_error(:>=, 3, "./rabbit.rb show [rabbit|litters|location] [id]")
+
   if ARGV[1] == 'rabbit'
     puts data[:rabbits][ARGV[2].to_i]
   elsif ARGV[1] == 'litters'
@@ -57,19 +63,17 @@ elsif ARGV[0] == 'show'
   end
 elsif ARGV[0] == 'edit'
   if ARGV[1] == 'rabbit'
-    if ARGV.count == 5
-      id = ARGV[2].to_i
-      key = ARGV[3].to_sym
-      val = ARGV[4]
-      if key == :birth
-      elsif key == :id
-        raise "Not allowed to edit id"
-      end
-      data[:rabbits][id][key] = val
-      File.write(FILENAME, YAML.dump(data))
-      puts data[:rabbits][id]
-    else
-      puts "./rabbit.rb edit rabbit 0 gender male"
+    check_error(:==, 5, "./rabbit.rb edit rabbit 0 gender male")
+
+    id = ARGV[2].to_i
+    key = ARGV[3].to_sym
+    val = ARGV[4]
+    if key == :birth
+    elsif key == :id
+      raise "Not allowed to edit id"
     end
+    data[:rabbits][id][key] = val
+    File.write(FILENAME, YAML.dump(data))
+    puts data[:rabbits][id]
   end
 end
